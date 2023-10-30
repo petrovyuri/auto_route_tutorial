@@ -2,7 +2,6 @@ import 'package:auto_route_tutorial/routing/app_router.dart';
 import 'package:flutter/material.dart';
 
 /// Инициализируем роутер, который будет использоваться в приложении
-/// Если используется DI, то лучше внедрить как Singleton
 final appRouter = AppRouter();
 
 void main() {
@@ -14,8 +13,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Здесь используем специальный MaterialApp для того, чтобы
-    // использовать роутер.
+    // Здесь создаем MaterialApp,в котором используем AppRouter
+    // вместо Navigator
     return MaterialApp.router(
       routerConfig: appRouter.config(),
     );

@@ -28,8 +28,3 @@ class AppRouter extends _$AppRouter {
         ),
       ];
 }
-
-/// Пустой роут, нужен пока как заглушка
-class EmptyRouterPage extends AutoRouter {
-  const EmptyRouterPage({super.key});
-}
