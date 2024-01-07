@@ -1,4 +1,5 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:auto_route_tutorial/features/auth/auth_screen.dart';
 import 'package:auto_route_tutorial/features/list_books/about_book_screen.dart';
 import 'package:auto_route_tutorial/features/list_books/list_books_routes.dart';
 import 'package:auto_route_tutorial/features/list_books/list_books_wrapper_screen.dart';
@@ -26,6 +27,8 @@ class AppRouter extends _$AppRouter {
             AutoRoute(page: ProfileRoute.page),
           ],
         ),
+        // Добавляем роут для авторизации
+        AutoRoute(page: AuthRoute.page),
       ];
 }
 
