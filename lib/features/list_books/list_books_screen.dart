@@ -22,7 +22,7 @@ class ListBooksScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Все книги ]'),
+        title: const Text('Все книги'),
       ),
       body: ListView.separated(
         separatorBuilder: (context, index) {
